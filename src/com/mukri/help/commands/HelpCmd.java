@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import com.mukri.help.Help;
+import com.mukri.help.file.MessageData;
 import com.mukri.help.file.SettingsData;
 
 
@@ -53,6 +54,7 @@ public class HelpCmd implements CommandExecutor {
 			else if(args[0].equalsIgnoreCase("reload")) {
 				if(p.hasPermission("customhelp.reload")) {
 					Help.getInstance().settings =  new SettingsData();
+					Help.getInstance().msgsettings =  new MessageData();
 					p.sendMessage("¤7[CustomHelp] Successfully reloaded!");
 				}
 			}
