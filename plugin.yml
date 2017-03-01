@@ -1,0 +1,8 @@
+name: CustomHelp
+version: 1.0
+main: com.mukri.help.Help
+author: Mukri
+description: Custom Help Commands by Mukri C 2017.
+commands:
+  help:
+    description: Custom Help Command.
